@@ -1,0 +1,33 @@
+from app.models.domain import (
+    Organization,
+    User,
+    Asset,
+    Vulnerability,
+    VulnerabilityCPE,
+    AssetVulnerabilityFinding,
+    Threat,
+    Risk,
+    SecurityControl,
+    RiskControl,
+    Scenario,
+    OptimizationResult,
+    OptimizationResultControl,
+    RiskAssessmentSnapshot,
+)
+
+__all__ = [
+    "Organization",
+    "User",
+    "Asset",
+    "Vulnerability",
+    "VulnerabilityCPE",
+    "AssetVulnerabilityFinding",
+    "Threat",
+    "Risk",
+    "SecurityControl",
+    "RiskControl",
+    "Scenario",
+    "OptimizationResult",
+    "OptimizationResultControl",
+    "RiskAssessmentSnapshot",
+]
