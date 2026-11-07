@@ -548,8 +548,8 @@ This project was conceived, engineered, and defended as an undergraduate capston
 * **Institution:** J.C. Bose University of Science and Technology, YMCA, Faridabad
 * **Department:** Department of Computer Engineering
 * **Degree:** Bachelor of Technology in Computer Science & Engineering
-* **Academic Guide / Supervisor:** `[TODO: Guide Name, Designation, Department]`
-* **Project Team Members:** `[TODO: Team Member Names / Roll Numbers]`
+* **Academic Guide / Supervisor:** Dr Sonali
+* **Project Team Members:** Kuldeep Vashisth (24001050016)
 * **Academic Year:** 2025–2026
 
 ---
@@ -566,7 +566,6 @@ A future where CISOs communicate with executive boards using the universal langu
 * **Harsh Tayal**  
   * GitHub: [@Harsh-Tayal007](https://github.com/Harsh-Tayal007)  
   * Email: [harshtayal710@gmail.com](mailto:harshtayal710@gmail.com)  
-  * LinkedIn: `[TODO: LinkedIn Profile URL]`
 
 ### License
 This project is licensed under the terms of the [MIT License](LICENSE).
