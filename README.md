@@ -59,7 +59,47 @@ PS105 resolves this gap by addressing a fundamental executive question:
 
 ## 2. Screenshots and visual artifacts
 
-### Sample generated Executive PDF Report (ReportLab Platypus)
+### Application user interface (SPA Views)
+
+| Executive Overview | Risk Quantification & Heatmap |
+| :---: | :---: |
+| <img src="docs/screenshots/02_overview_light.png" alt="Executive Overview" width="460"/> | <img src="docs/screenshots/05_risks_light.png" alt="Risk Quantification and Heatmap" width="460"/> |
+
+| Monte Carlo Loss Simulations | Investment Optimization (MILP Solver) |
+| :---: | :---: |
+| <img src="docs/screenshots/06_simulations_light.png" alt="Monte Carlo Loss Simulations" width="460"/> | <img src="docs/screenshots/07_optimization_light.png" alt="Investment Optimization and Solver" width="460"/> |
+
+| Budget Scenarios & Efficient Frontier | Executive Reports Generator |
+| :---: | :---: |
+| <img src="docs/screenshots/08_scenarios_light.png" alt="Budget Scenarios and Frontier" width="460"/> | <img src="docs/screenshots/09_reports_light.png" alt="Executive Reports Generator" width="460"/> |
+
+| Asset Inventory | Vulnerability Findings |
+| :---: | :---: |
+| <img src="docs/screenshots/03_assets_light.png" alt="Asset Inventory" width="460"/> | <img src="docs/screenshots/04_vulnerabilities_light.png" alt="Vulnerability Findings" width="460"/> |
+
+| Platform Blueprint (12 Specifications) | Authentication & Demo Access |
+| :---: | :---: |
+| <img src="docs/screenshots/10_blueprint_light.png" alt="Platform Blueprint" width="460"/> | <img src="docs/screenshots/01_login_light.png" alt="Login and Demo Entry" width="460"/> |
+
+<details>
+<summary><b>View complete interface capture index</b></summary>
+
+| View Name | Primary Theme | File Path | Status |
+| :--- | :--- | :--- | :--- |
+| **Login & Demo Entry** | Paper Light | [`01_login_light.png`](docs/screenshots/01_login_light.png) | Captured |
+| **Executive Overview** | Paper Light | [`02_overview_light.png`](docs/screenshots/02_overview_light.png) | Captured |
+| **Asset Inventory** | Paper Light | [`03_assets_light.png`](docs/screenshots/03_assets_light.png) | Captured |
+| **Vulnerability Findings** | Paper Light | [`04_vulnerabilities_light.png`](docs/screenshots/04_vulnerabilities_light.png) | Captured |
+| **Risk Quantification & Heatmap** | Paper Light | [`05_risks_light.png`](docs/screenshots/05_risks_light.png) | Captured |
+| **Monte Carlo Loss Simulations** | Paper Light | [`06_simulations_light.png`](docs/screenshots/06_simulations_light.png) | Captured |
+| **Investment Optimization & Solver** | Paper Light | [`07_optimization_light.png`](docs/screenshots/07_optimization_light.png) | Captured |
+| **Budget Scenarios & Frontier** | Paper Light | [`08_scenarios_light.png`](docs/screenshots/08_scenarios_light.png) | Captured |
+| **Executive Reports Generator** | Paper Light | [`09_reports_light.png`](docs/screenshots/09_reports_light.png) | Captured |
+| **Platform Blueprint (12 Sections)** | Paper Light | [`10_blueprint_light.png`](docs/screenshots/10_blueprint_light.png) | Captured |
+
+</details>
+
+### Generated Executive PDF Report (ReportLab Platypus)
 
 The platform automatically synthesizes enterprise telemetry and solver outputs into a 13-page, publication-grade executive PDF report with vector loss curves, discrete probability distributions, and capital allocation audits:
 
@@ -89,21 +129,6 @@ The platform automatically synthesizes enterprise telemetry and solver outputs i
 * [Page 13: Executive Attestation & Sign-Off Schedule](docs/screenshots/page_13.png)
 
 </details>
-
-### Application UI capture checklist
-
-| View Name | Primary Theme | Suggested File Name | Status |
-| :--- | :--- | :--- | :--- |
-| **Login & Demo Entry** | Paper Light / Obsidian Dark | `docs/screenshots/01_login_light.png` | *Pending capture* |
-| **Executive Overview** | Paper Light | `docs/screenshots/02_overview_light.png` | *Pending capture* |
-| **Asset Inventory** | Paper Light | `docs/screenshots/03_assets_light.png` | *Pending capture* |
-| **Vulnerability Findings** | Paper Light | `docs/screenshots/04_vulnerabilities_light.png` | *Pending capture* |
-| **Risk Quantification & Heatmap** | Paper Light / Dark | `docs/screenshots/05_risks_light.png` | *Pending capture* |
-| **Monte Carlo Loss Simulations** | Paper Light | `docs/screenshots/06_simulations_light.png` | *Pending capture* |
-| **Investment Optimization & Solver** | Paper Light | `docs/screenshots/07_optimization_light.png` | *Pending capture* |
-| **Budget Scenarios & Frontier** | Paper Light | `docs/screenshots/08_scenarios_light.png` | *Pending capture* |
-| **Executive Reports Generator** | Paper Light | `docs/screenshots/09_reports_light.png` | *Pending capture* |
-| **Platform Blueprint (12 Sections)** | Paper Light / Dark | `docs/screenshots/10_blueprint_light.png` | *Pending capture* |
 
 ---
 
