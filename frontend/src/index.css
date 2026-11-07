@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/*
+ * Layout & Stacking Z-Index Scale:
+ * - Content: 0
+ * - Page sticky bars / chips: 10
+ * - Right-rail TOC: 10
+ * - Floating Back-to-Top: 20
+ * - App Header: 30
+ * - Sidebar & mobile drawer: 40
+ * - Tooltips & dropdown portals: 50
+ * - Modals, dialogs & alerts: 60
+ */
+
+:root {
+  --app-header-h: 64px;
+  --sidebar-w-collapsed: 72px;
+  --sidebar-w-expanded: 264px;
+  --bg:#F5F2EA; --surface:#FFFFFF; --surface-2:#FAF8F3;
+  --ink:#17211C; --ink-muted:#5C6760; --line:#E4DFD2;
+  --brand:#1E4D3F; --brand-soft:#E3EDE8; --brand-ink:#FFFFFF;
+  --warn:#B7791F; --warn-soft:#F6ECD6;
+  --danger:#A8352A; --danger-soft:#F7E4E1;
+  --ok:#2F7D4F; --ok-soft:#E2F1E8;
+}
+:root[data-theme="dark"] {
+  --bg:#111613; --surface:#181F1B; --surface-2:#1D2621;
+  --ink:#EDE9DD; --ink-muted:#9AA59E; --line:#2A332E;
+  --brand:#7FC4A6; --brand-soft:#1F3329; --brand-ink:#0E1511;
+  --warn:#E0B05A; --warn-soft:#3A2F17;
+  --danger:#E0786C; --danger-soft:#3A1F1C;
+  --ok:#6CC28F; --ok-soft:#1B3326;
+}
+@theme inline {
+  --color-bg:var(--bg); --color-surface:var(--surface); --color-surface-2:var(--surface-2);
+  --color-ink:var(--ink); --color-muted:var(--ink-muted); --color-line:var(--line);
+  --color-brand:var(--brand); --color-brand-soft:var(--brand-soft); --color-brand-ink:var(--brand-ink);
+  --color-warn:var(--warn); --color-warn-soft:var(--warn-soft);
+  --color-danger:var(--danger); --color-danger-soft:var(--danger-soft);
+  --color-ok:var(--ok); --color-ok-soft:var(--ok-soft);
+  --font-sans:"IBM Plex Sans", system-ui, sans-serif;
+  --font-serif:"Newsreader", Georgia, serif;
+  --font-mono:"IBM Plex Mono", ui-monospace, monospace;
+}
+body { background:var(--bg); color:var(--ink); font-family:var(--font-sans); }
+h1,h2,h3 { font-family:var(--font-serif); letter-spacing:-0.01em; }
+.num { font-family:var(--font-serif); font-variant-numeric:tabular-nums; }
+:focus-visible { outline:2px solid var(--brand); outline-offset:2px; }
+
+/* Clean minimal scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ink-muted);
+}
+
+/* Scoped visual theme for Platform Blueprint page */
+.blueprint {
+  --bp-bg: #FAF9F5;
+  --bp-surface: #FFFFFF;
+  --bp-surface-2: #F5F4EE;
+  --bp-ink: #1F1E1D;
+  --bp-muted: #6B6A64;
+  --bp-line: #E8E6DC;
+  --bp-accent: #C15F3C;
+  --bp-accent-soft: #F4E4DC;
+  --bp-accent-ink: #FFFFFF;
+  --bp-tint-sage: #E8EFE9;
+  --bp-tint-sand: #F3EFE6;
+  --bp-tint-slate: #EAECEF;
+
+  background-color: var(--bp-bg);
+  color: var(--bp-ink);
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.7;
+}
+
+:root[data-theme="dark"] .blueprint {
+  --bp-bg: #262624;
+  --bp-surface: #30302E;
+  --bp-surface-2: #383835;
+  --bp-ink: #F0EEE6;
+  --bp-muted: #A6A39A;
+  --bp-line: #3D3D3A;
+  --bp-accent: #D97757;
+  --bp-accent-soft: #3A2A24;
+  --bp-accent-ink: #FFFFFF;
+  --bp-tint-sage: #2D3830;
+  --bp-tint-sand: #3D372E;
+  --bp-tint-slate: #2F343A;
+}
+
+.blueprint h1,
+.blueprint h2,
+.blueprint h3,
+.blueprint .bp-serif {
+  font-family: "Newsreader", Georgia, serif;
+  letter-spacing: -0.02em;
+}
+
+.blueprint code,
+.blueprint pre,
+.blueprint .bp-mono {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+.blueprint section {
+  scroll-margin-top: 96px;
+}

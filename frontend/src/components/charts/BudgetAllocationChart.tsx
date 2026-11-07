@@ -1,0 +1,106 @@
+import React from 'react';
+import {
+  PieChart,
+  Pie,
+  Cell,
+  Tooltip as RechartsTooltip,
+  ResponsiveContainer,
+  Legend,
+} from 'recharts';
+import { Card } from '../ui/Card';
+import { Badge } from '../ui/Badge';
+import { useThemeColors } from '../../lib/useThemeColors';
+import { formatINR } from '../../lib/format';
+
+export interface BudgetBudgetItem {
+  category: string;
+  amount: number; // in ₹ Lakhs
+  color?: string;
+}
+
+export interface BudgetAllocationChartProps {
+  data?: BudgetBudgetItem[];
+  title?: string;
+  totalBudget?: number;
+}
+
+export const BudgetAllocationChart: React.FC<BudgetAllocationChartProps> = ({
+  data = [],
+  title = 'Security Investment Budget Allocation',
+  totalBudget = 0,
+}) => {
+  const colors = useThemeColors();
+  const hasData = data && data.length > 0 && data.some((d) => d.amount > 0);
+
+  const fallbackPalette = [
+    colors.brand,
+    colors.ok,
+    colors.warn,
+    colors.danger,
+    colors.muted,
+  ];
+
+  return (
+    <Card
+      title={title}
+      action={<Badge variant="outline" size="sm">Portfolio Allocation</Badge>}
+      subtitle={`Distribution of ${formatINR(totalBudget * 1e5)} available cybersecurity budget`}
+    >
+      <div className="h-64 w-full">
+        {!hasData ? (
+          <div className="h-full flex flex-col items-center justify-center text-center p-4">
+            <p className="text-xs text-muted">No budget allocation data</p>
+            <p className="text-[11px] text-muted/70 mt-1">Execute investment optimization solver to generate optimal budget allocations.</p>
+          </div>
+        ) : (
+          <ResponsiveContainer width="100%" height="100%">
+            <PieChart>
+              <Pie
+                data={data}
+                cx="50%"
+                cy="50%"
+                innerRadius={50}
+                outerRadius={80}
+                paddingAngle={3}
+                dataKey="amount"
+                nameKey="category"
+              >
+                {data.map((entry, index) => {
+                  const sliceColor = entry.color && !entry.color.startsWith('#0') && !entry.color.startsWith('#1')
+                    ? entry.color
+                    : fallbackPalette[index % fallbackPalette.length];
+                  return (
+                    <Cell
+                      key={`cell-${index}`}
+                      fill={sliceColor}
+                      stroke={colors.surface}
+                      strokeWidth={2}
+                    />
+                  );
+                })}
+              </Pie>
+              <RechartsTooltip
+                contentStyle={{
+                  backgroundColor: colors.surface,
+                  borderColor: colors.line,
+                  borderRadius: '10px',
+                  color: colors.ink,
+                  fontSize: '12px',
+                  boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
+                }}
+                itemStyle={{ color: colors.ink }}
+                labelStyle={{ color: colors.muted, fontWeight: 500 }}
+                formatter={(val: any) => [formatINR(Number(val) * 1e5), 'Allocation']}
+              />
+              <Legend
+                formatter={(value) => (
+                  <span className="text-xs text-muted font-normal">{value}</span>
+                )}
+              />
+            </PieChart>
+          </ResponsiveContainer>
+        )}
+      </div>
+    </Card>
+  );
+};
