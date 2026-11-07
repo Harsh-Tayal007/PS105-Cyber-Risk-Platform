@@ -51,11 +51,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Generated PDF reports & visual verification artifacts
+# Generated PDF reports & temporary artifacts
 *.pdf
 backend/*.pdf
-docs/screenshots/*.png
-!docs/screenshots/.gitkeep
 
 # IDE & Editor configuration
 .vscode/

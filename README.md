@@ -59,7 +59,38 @@ PS105 resolves this gap by addressing a fundamental executive question:
 
 ## 2. Screenshots and visual artifacts
 
-Visual artifacts should be captured and stored in `docs/screenshots/` matching the checklist below:
+### Sample generated Executive PDF Report (ReportLab Platypus)
+
+The platform automatically synthesizes enterprise telemetry and solver outputs into a 13-page, publication-grade executive PDF report with vector loss curves, discrete probability distributions, and capital allocation audits:
+
+| Page 1: Cover & Metadata | Page 2: Executive Summary & KPIs | Page 5: 5×5 Risk Heatmap |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/page_01.png" alt="Cover Page" width="260"/> | <img src="docs/screenshots/page_02.png" alt="Executive Summary" width="260"/> | <img src="docs/screenshots/page_05.png" alt="Risk Matrix Heatmap" width="260"/> |
+
+| Page 6: Monte Carlo Exceedance | Page 7: Portfolio Optimization | Page 8: Efficient Frontier Scenarios |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/page_06.png" alt="Monte Carlo Loss Exceedance Curve" width="260"/> | <img src="docs/screenshots/page_07.png" alt="MILP Portfolio Optimization" width="260"/> | <img src="docs/screenshots/page_08.png" alt="Budget Frontier Comparison" width="260"/> |
+
+<details>
+<summary><b>Click to view all 13 report page preview links</b></summary>
+
+* [Page 1: Title & Classification Cover](docs/screenshots/page_01.png)
+* [Page 2: Executive Financial Summary & KPI Tiles](docs/screenshots/page_02.png)
+* [Page 3: Organizational Asset Valuation Schedule](docs/screenshots/page_03.png)
+* [Page 4: Correlated Vulnerability Findings](docs/screenshots/page_04.png)
+* [Page 5: Qualitative 5×5 Risk Assessment Heatmap](docs/screenshots/page_05.png)
+* [Page 6: Stochastic Monte Carlo Simulation & Loss Curve](docs/screenshots/page_06.png)
+* [Page 7: Mixed-Integer Linear Programming Optimization](docs/screenshots/page_07.png)
+* [Page 8: Multi-Scenario Budget Efficient Frontier](docs/screenshots/page_08.png)
+* [Page 9: Optimization Governance & Fiduciary Audit](docs/screenshots/page_09.png)
+* [Page 10: FAIR-Inspired Mathematical Methodology](docs/screenshots/page_10.png)
+* [Page 11: Quantitative Limitations & Boundary Conditions](docs/screenshots/page_11.png)
+* [Page 12: Technical Glossary & Formula References](docs/screenshots/page_12.png)
+* [Page 13: Executive Attestation & Sign-Off Schedule](docs/screenshots/page_13.png)
+
+</details>
+
+### Application UI capture checklist
 
 | View Name | Primary Theme | Suggested File Name | Status |
 | :--- | :--- | :--- | :--- |
@@ -73,7 +104,6 @@ Visual artifacts should be captured and stored in `docs/screenshots/` matching t
 | **Budget Scenarios & Frontier** | Paper Light | `docs/screenshots/08_scenarios_light.png` | *Pending capture* |
 | **Executive Reports Generator** | Paper Light | `docs/screenshots/09_reports_light.png` | *Pending capture* |
 | **Platform Blueprint (12 Sections)** | Paper Light / Dark | `docs/screenshots/10_blueprint_light.png` | *Pending capture* |
-| **Executive PDF Report (Pages 1, 3, 6, 7, 8, 9)** | PDF / Canvas Render | `docs/screenshots/11_pdf_pages_sample.png` | *Generated in build* |
 
 ---
 
